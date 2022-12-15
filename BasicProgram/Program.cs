@@ -5,7 +5,8 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("\t\tChoose the program from the below option");
-            Console.WriteLine("\n1) Factorial Numbers. \n2) Prime Number.\n3) Reverse Number and String.\n4) Fibonacci Series\n");
+            Console.WriteLine("\n1) Factorial Numbers. \n2) Prime Number.\n3) Reverse Number and String.\n4) Fibonacci Series.");
+            Console.WriteLine("5) Armstrong Number.");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -34,6 +35,14 @@
                     int num = int.Parse(Console.ReadLine());
                     FibonacciSeries fibonacciSeries = new FibonacciSeries();
                     fibonacciSeries.Fibonacci(num);
+                    break;
+
+                case 5:
+                    Console.WriteLine("\t\tWelcome To Armstrong Number Problem\n");
+                    Console.WriteLine("Enter a three Digit Number");
+                    int number = int.Parse(Console.ReadLine());
+                    ArmstrongNumber arm = new ArmstrongNumber();
+                     arm.Armstrong(number);
                     break;
 
                 default:
