@@ -4,9 +4,6 @@
     {
         public static void Main(string[] args)
         {
-
-
-
             Console.WriteLine("\t\tChoose the program from the below option");
             Console.WriteLine("\n1) Factorial Numbers. \n2) Prime Number.\n3) Reverse Number and String.\n4) Fibonacci Series\n");
             int option = int.Parse(Console.ReadLine());
