@@ -6,7 +6,7 @@
         {
             Console.WriteLine("\t\tChoose the program from the below option");
             Console.WriteLine("\n1) Factorial Numbers. \n2) Prime Number.\n3) Reverse Number and String.\n4) Fibonacci Series.");
-            Console.WriteLine("5) Armstrong Number.");
+            Console.WriteLine("5) Armstrong Number. \n6) Sum Of Digits");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
@@ -44,13 +44,17 @@
                     ArmstrongNumber arm = new ArmstrongNumber();
                      arm.Armstrong(number);
                     break;
+                case 6:
+                    SumOfDigit obj = new SumOfDigit();
+                    obj.Sum();
+                    break;
 
                 default:
                     Console.WriteLine("Please Select a Valid Option");
                     break;
 
-
             }
+             Console.ReadLine();
 
         }
     }
